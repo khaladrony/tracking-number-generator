@@ -2,6 +2,9 @@
 
 A RESTful API that generates unique tracking numbers for parcels. This API is scalable, efficient, and capable of handling high concurrency.
 
+## API Design Doc
+[View PDF](Tracking_Number_Generator_API.pdf)
+
 ## Features
 
 - Generates unique tracking numbers matching the regex pattern: `^[A-Z0-9]{1,16}$`
