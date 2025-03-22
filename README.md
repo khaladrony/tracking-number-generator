@@ -3,7 +3,7 @@
 A RESTful API that generates unique tracking numbers for parcels. This API is scalable, efficient, and capable of handling high concurrency.
 
 ## API Design Doc
-[View PDF](Tracking_Number_Generator_API.pdf)
+[View PDF](tracking_number_generator_api_doc.pdf)
 
 ## Features
 
@@ -18,7 +18,6 @@ A RESTful API that generates unique tracking numbers for parcels. This API is sc
 - Spring Boot 3.2.4
 - Redis for distributed uniqueness checking
 - Docker for containerization
-- Spring Actuator for monitoring
 
 ## API Specification
 
@@ -94,34 +93,11 @@ docker build -t tracking-number-generator .
 docker-compose up -d
 ```
 
-## Testing
-
-Run the automated tests with:
-```bash
-mvn test
-```
-
-## Deployment
-
-For production deployment, you can use:
-
-1. **Docker Swarm or Kubernetes**: For container orchestration
-2. **AWS Elastic Beanstalk**: For simplified deployment
-3. **Google Cloud Run**: For serverless deployment
-
 ## Scaling Strategy
 
 - Horizontal scaling: Run multiple instances behind a load balancer
 - Redis ensures uniqueness across instances
 - Stateless design allows for easy scaling
-
-## Monitoring
-
-Use Spring Boot Actuator endpoints for monitoring:
-
-- Health check: `/actuator/health`
-- Metrics: `/actuator/metrics`
-- Info: `/actuator/info`
 
 ## Example Usage
 
