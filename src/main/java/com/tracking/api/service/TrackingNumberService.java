@@ -22,7 +22,6 @@ public class TrackingNumberService {
         String trackingNumber;
         boolean isUnique = false;
 
-        // Keep generating tracking numbers until we find a unique one
         do {
             trackingNumber = trackingNumberGenerator.generate(request);
             isUnique = redisTemplate.opsForValue().setIfAbsent(TRACKING_NUMBER_KEY + trackingNumber, "1");

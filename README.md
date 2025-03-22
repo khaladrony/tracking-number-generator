@@ -60,7 +60,7 @@ Generates a new unique tracking number.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/username/tracking-number-generator.git
+git clone https://github.com/khaladrony/tracking-number-generator.git
 cd tracking-number-generator
 ```
 
@@ -80,6 +80,10 @@ java -jar target/tracking-number-generator-0.0.1-SNAPSHOT.jar
 ```
 
 5. Access the API at http://localhost:8080/next-tracking-number
+
+6. API Documentation [Swagger UI](http://localhost:8080/swagger-ui/index.html)
+   
+   
 
 ### Docker Deployment
 
